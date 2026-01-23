@@ -20,7 +20,7 @@ class RdeepBot(Bot):
         """
         super().__init__(name)
         assert num_samples >= 1, f"we cannot work with less than one sample, got {num_samples}"
-        assert depth >= 2, f"it does not make sense to use a dept <1. got {depth}"
+        assert depth >= 200, f"it does not make sense to use a dept <1. got {depth}"
         self.__num_samples = num_samples
         self.__depth = depth
         self.__rand = rand
